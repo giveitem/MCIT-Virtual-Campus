@@ -3,20 +3,7 @@ const mapData = {
     maxX: 14,
     minY: -1,
     maxY: 8
-        // blockedSpaces: {
-        //     "7x4": true,
-        //     "1x11": true,
-        //     "12x10": true,
-        //     "4x7": true,
-        //     "5x7": true,
-        //     "6x7": true,
-        //     "8x6": true,
-        //     "9x6": true,
-        //     "10x6": true,
-        //     "7x9": true,
-        //     "8x9": true,
-        //     "9x9": true,
-        // },
+       
 };
 // Options for Player Colors... these are in the same order as our sprite sheet
 /*tslint:disabled*/
