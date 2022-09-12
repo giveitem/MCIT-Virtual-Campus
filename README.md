@@ -1,7 +1,5 @@
-# Project Title
-MCIT-Virtual-Campus
+# MCIT-Virtual-Campus
 
-## Overview
 
 ### Project summary
 
@@ -10,9 +8,8 @@ A virtual campus for MCITers to study, meet, chat, and schedule events!
 This is an entry for the MOSA Fall 2022 Hackathon: [Devpost](https://...)
 
 ### Authors
-
-* **Name** - Deshi Zhang  - @zdspeace – deshizzz@seas.upenn.edu – [GitHub](https://github.com/Janecching)
-* **Name** - Jane Chong   – @janchong - janchong@seas.upenn.edu – [GitHub](https://github.com/giveitem)
+* **Deshi Zhang**  - @zdspeace – deshizzz@seas.upenn.edu – [GitHub](https://github.com/Janecching)
+* **Jane Chong** – @janchong - janchong@seas.upenn.edu – [GitHub](https://github.com/giveitem)
 
 
 ## Technology Specs 
