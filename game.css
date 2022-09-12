@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(180deg, #64BEFF -50%, #6e96ff 69.71%, #2a65ff 150%);
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* top row layout*/
+
+.player-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1em;
+    display: flex;
+    gap: 0.5em;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.avatar {
+    width: 5%;
+}
+
+.name {
+    width: 10%;
+}
+
+.room {
+    width: 20%;
+    position: absolute;
+    right: 0;
+}
+
+.focus-game-container {
+    position: bottom;
+    width: 240px;
+    height: 200px;
+    background: url(/images/classroom.png) no-repeat no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    transform: scale(3);
+    image-rendering: pixelated;
+}
+
+.social-game-container {
+    position: relative;
+    width: 240px;
+    height: 208px;
+    background: url(/images/social.png) no-repeat no-repeat;
+    background-size: 90%;
+    background-position: bottom;
+    transform: scale(3);
+    image-rendering: pixelated;
+    position: absolute;
+    left: 20%;
+}
+
+.chat-type {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1em;
+    display: flex;
+    gap: 0.5em;
+    align-items: flex-end;
+    width: 25%;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+button {
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 18px;
+    height: 44px;
+    border-radius: 4px;
+    outline: 0;
+}
+
+input[type="text"] {
+    outline: 0;
+    padding-left: 0.5em;
+    border: 3px solid #222034;
+    width: 150px;
+    /* text-transform: uppercase; */
+}
+
+input[type="text"]:focus {
+    border-color: #f000ff;
+}
+
+button {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background: #59ff5a;
+    border: 0;
+    border-bottom: 2px solid #1e830b;
+    cursor: pointer;
+}
+
+button:active {
+    position: relative;
+    top: 1px;
+}
+
+
+/* Characters */
+
+.grid-cell {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+}
+
+.Character {
+    transition: transform 0.4s;
+}
+
+.Character.you {
+    z-index: 1;
+}
+
+.Character.you .Character_you-arrow {
+    display: block;
+}
+
+.Character_you-arrow {
+    display: none;
+    position: absolute;
+    top: -18px;
+    left: 5px;
+    width: 7px;
+    height: 5px;
+    background: url(/images/arrow.png) no-repeat no-repeat;
+}
+
+.Character_sprite {
+    overflow: hidden;
+    top: -3px;
+    background: url(/images/characters.png);
+}
+
+.Character[data-direction="right"] .Character_sprite {
+    background-position-x: 16px;
+}
+
+.Character[data-color="red"] .Character_sprite {
+    background-position-y: -16px;
+}
+
+.Character[data-color="orange"] .Character_sprite {
+    background-position-y: -32px;
+}
+
+.Character[data-color="yellow"] .Character_sprite {
+    background-position-y: -48px;
+}
+
+.Character[data-color="green"] .Character_sprite {
+    background-position-y: -64px;
+}
+
+.Character[data-color="purple"] .Character_sprite {
+    background-position-y: -80px;
+}
+
+.Character_shadow {
+    background: url(/images/shadow.png) no-repeat no-repeat;
+}
+
+.Character_name-container {
+    position: absolute;
+    top: -12px;
+    left: -5px;
+    font-size: 5px;
+    padding: 1px 2px 1px;
+    border-radius: 3px;
+    background: #333;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.clock {
+    margin: auto;
+    width: 30%;
+    padding: 20px;
+}
+
+#message-form {
+    text-align: center;
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #b7b5b9;
+    text-transform: none;
+}
+
+#messages {
+    padding-bottom: 15%;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    background-color: #6929ca;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    width: 50%;
+}
+
+li span {
+    font-style: italic;
+    font-weight: bolder;
+    color: #b5b0b9;
+}
+
+#chat {
+    width: 20%;
+    /* margin: auto;
+    margin-left: 1em; */
+    position: absolute;
+    right: 0;
+    overflow-y: scroll;
+    max-height: 500px;
+}
+
+#messages-input {
+    text-transform: none;
+}

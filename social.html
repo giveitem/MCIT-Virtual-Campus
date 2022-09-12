@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <title>Virtual Campus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" type="text/css">
+
+</head>
+
+<body>
+    <section id="whenSignedOut">
+        <h1>Welcome to MCITO Virtual Campus</h1>
+        <button id="signInBtn" class="btn btn-primary">Sign in with Google</button>
+    </section>
+    <section id="whenSignedIn" hidden="false">
+        <!-- player deets -->
+        <div class="player-info">
+            <div class="avatar">
+                <!-- <label for="player-color">Avatar</label> -->
+                <button id="player-color">Change Avatar</button>
+            </div>
+            <div class="name">
+                <input id="player-name" maxlength="10" type="text" />
+            </div>
+            <div class="avatar">
+            </div>
+            <div class="room">
+                <button id="player-room" onclick="location.href= './focus.html'">Go To Class</button>
+                <button id="focus-board" onclick="location.href= 'https://school2-b1d17.web.app/'">Go To Notice
+                    Board</button>
+                <button id="signOutBtn" class="btn btn-primary">Sign Out</button>
+            </div>
+        </div>
+
+        <!-- game -->
+        <div class="social-game-container"></div>
+
+        <!-- chat -->
+        <div id="chat">
+            <ul id="messages"></ul>
+        </div>
+        <div class="chat-type">
+            <form id="message-form">
+                <input id="message-input" type="text" />
+                <button id="message-btn" type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- // NOTE - INCLUDE YOUR FIREBASE CONFIG HERE FOR ANYTHING TO WORK:
+    // Your web app's Firebase configuration -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script>
+        const firebaseConfig = {
+            // NOTE - INCLUDE YOUR FIREBASE CONFIG HERE FOR ANYTHING TO WORK:
+
+
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+
+    <script src="/sapp.js"></script>
+    <script src="/KeyPressListener.js"></script>
+
+</body>
+
+</html>
