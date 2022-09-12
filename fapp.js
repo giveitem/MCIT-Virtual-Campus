@@ -5,11 +5,6 @@ const mapData = {
     maxY: 8
        
 };
-// Options for Player Colors... these are in the same order as our sprite sheet
-/*tslint:disabled*/
-
-//const name = prompt("Please Tell Us Your Name");
-// const name = "Ian";
 
 const playerColors = ["blue", "red", "orange", "yellow", "green", "purple"];
 //Misc Helpers
