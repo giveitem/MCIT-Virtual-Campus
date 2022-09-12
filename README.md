@@ -11,6 +11,9 @@ This is an entry for the MOSA Fall 2022 Hackathon: [Devpost](https://...)
 * **Deshi Zhang**  - @zdspeace – deshizzz@seas.upenn.edu – [GitHub](https://github.com/Janecching)
 * **Jane Chong** – @janchong - janchong@seas.upenn.edu – [GitHub](https://github.com/giveitem)
 
+## Live Demo
+
+Please check out our live demo [here](https://school-18507.web.app/social.html)
 
 ## Technology Specs 
 
