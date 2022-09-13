@@ -5,11 +5,11 @@
 
 A virtual campus for MCITers to study, meet, chat, and schedule events!  
 
-This is an entry for the MOSA Fall 2022 Hackathon: [Devpost](https://...)
+This is an entry for the MOSA Fall 2022 Hackathon: [Devpost](https://devpost.com/software/virtual-campus-1ra9fq)
 
 ### Authors
-* **Deshi Zhang**  - @zdspeace – deshizzz@seas.upenn.edu – [GitHub](https://github.com/Janecching)
-* **Jane Chong** – @janchong - janchong@seas.upenn.edu – [GitHub](https://github.com/giveitem)
+* **Deshi Zhang**  - @zdspeace – deshizzz@seas.upenn.edu – [GitHub](https://github.com/giveitem)
+* **Jane Chong** – @janchong - janchong@seas.upenn.edu – [GitHub](https://github.com/Janecching)
 
 ## Live Demo
 
