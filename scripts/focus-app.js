@@ -3,7 +3,6 @@ const mapData = {
     maxX: 14,
     minY: -1,
     maxY: 8
-       
 };
 
 const playerColors = ["blue", "red", "orange", "yellow", "green", "purple"];
@@ -56,7 +55,7 @@ function getRandomSafeSpot() { // !!! change to next seat
 
 
 
-(function() {
+(function () {
 
     let playerId;
     let playerRef;
@@ -170,7 +169,7 @@ function getRandomSafeSpot() { // !!! change to next seat
             })
         })
 
-        //Place my first coin
+
 
     }
 
@@ -194,7 +193,6 @@ function getRandomSafeSpot() { // !!! change to next seat
                 color: randomFromArray(playerColors),
                 x,
                 y,
-                //coins: 0,
             })
 
             //Remove me from Firebase when I diconnect
@@ -210,7 +208,6 @@ function getRandomSafeSpot() { // !!! change to next seat
     firebase.auth().signInAnonymously().catch((error) => {
         var errorCode = error.code;
         var errorMessage = error.message;
-        // ...
         console.log(errorCode, errorMessage);
     });
 
