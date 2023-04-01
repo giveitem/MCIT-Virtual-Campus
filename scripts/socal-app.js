@@ -151,6 +151,17 @@ function getRandomSafeSpot() { // !!! change to next seat
                 players[playerId].direction = "left";
             }
             playerRef.set(players[playerId]);
+            if (players[playerId].x === 12 && players[playerId].y === 11) {
+                const videoElement = document.createElement("div");
+                videoElement.classList.add("video");
+                videoElement.innerHTML = `<iframe width="100" height="100" src="https://www.youtube.com/embed/OjNpRbNdR7E?&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+                gameContainer.appendChild(videoElement);
+            } else {
+                const videoElement = document.querySelector(".video");
+                if (videoElement) {
+                    videoElement.remove();
+                }
+            }
         }
     }
 
@@ -170,9 +181,9 @@ function getRandomSafeSpot() { // !!! change to next seat
             Object.keys(players).forEach((key) => {
                 const characterState = players[key];
                 let el = playerElements[key];
-                console.log("plyaerelement:", playerElements);
-                console.log("key", key);
-                console.log("playerElements[key]", playerElements[key]);
+                // console.log("plyaerelement:", playerElements);
+                // console.log("key", key);
+                // console.log("playerElements[key]", playerElements[key]);
                 // Now update the DOM
                 el.querySelector(".Character_name").innerText = characterState.name;
                 el.setAttribute("data-color", characterState.color);
